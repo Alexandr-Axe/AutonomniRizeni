@@ -6,9 +6,8 @@ namespace AutonomniRizeni
 {
     public class RidiciCentrum : AutonomniAuto
     {
-        public event DruhTrasy Trasa;
-        public delegate void DruhTrasy(AutonomniAuto a);
-
+        public TrasaStav STAVAJICIPOCASI;
+        public TrasaDruh STAVAJICICESTA;
         public void ZjistiTrasu()
         {
             if (trasaDruh == TrasaDruh.Tunel)
@@ -34,6 +33,7 @@ namespace AutonomniRizeni
         }
         public void Delej(TrasaStav Vygenerovano)
         {
+            STAVAJICIPOCASI = Vygenerovano;
             Console.WriteLine(Vygenerovano);
         }
         public void ZjistiCestu(Pocasi DRUHTRASY)
@@ -42,7 +42,37 @@ namespace AutonomniRizeni
         }
         public void DelejCestu(TrasaDruh Vygenerovano)
         {
-            Console.WriteLine(Vygenerovano);
+            if (Vygenerovano == TrasaDruh.Tunel)
+            {
+                Rychlost += Rychlost / 2;
+                Sviti = true;
+                Console.WriteLine("Rychlost je " + Rychlost + " na trase " + Vygenerovano + " a světla " + Sviti);
+                Rychlost = 50;
+                STAVAJICICESTA = Vygenerovano;
+            }
+            else if (Vygenerovano == TrasaDruh.Most)
+            {
+                Rychlost -= Rychlost / 2;
+                Sviti = false;
+                Console.WriteLine("Rychlost je " + Rychlost + " na trase " + Vygenerovano + " a světla " + Sviti);
+                Rychlost = 50;
+                STAVAJICICESTA = Vygenerovano;
+            }
+            else if (Vygenerovano == TrasaDruh.Common && STAVAJICIPOCASI == TrasaStav.Slunecno)
+            {
+                Sviti = false;
+                Console.WriteLine("Rychlost je " + Rychlost + " na trase " + Vygenerovano + " a světla " + Sviti);
+                Rychlost = 50;
+                STAVAJICICESTA = Vygenerovano;
+            }
+            else if (Vygenerovano == TrasaDruh.Common)
+            {
+                Rychlost = Rychlost;
+                Sviti = false;
+                Console.WriteLine("Rychlost je " + Rychlost + " na trase " + Vygenerovano + " a světla " + Sviti);
+                Rychlost = 50;
+                STAVAJICICESTA = Vygenerovano;
+            }
         }
         public RidiciCentrum(AutonomniAuto elon) : base (elon.Rychlost, elon.DelkaTrasy, elon.trasaStav, elon.trasaDruh)
         {

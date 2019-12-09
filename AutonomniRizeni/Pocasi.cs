@@ -22,7 +22,7 @@ namespace AutonomniRizeni
             {
                 Random NC = new Random();
                 int Vygenerovano = NC.Next(0, 101);
-                Thread.Sleep(1000);
+                Thread.Sleep(1);
                 if (Vygenerovano >= 50) DruhPocasi(TrasaStav.Slunecno);
                 else if (Vygenerovano >= 30 && Vygenerovano < 50) DruhPocasi(TrasaStav.Prsi);
                 else if (Vygenerovano >= 10 && Vygenerovano < 30) DruhPocasi(TrasaStav.Mlha);
