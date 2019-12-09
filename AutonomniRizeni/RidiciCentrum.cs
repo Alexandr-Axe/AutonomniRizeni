@@ -18,7 +18,7 @@ namespace AutonomniRizeni
             }
             else if (trasaDruh == TrasaDruh.Most)
             {
-                Rychlost += Rychlost / 2;
+                Rychlost -= Rychlost / 2;
                 Sviti = false;
             }
             else
