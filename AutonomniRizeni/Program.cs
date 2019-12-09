@@ -9,9 +9,11 @@ namespace AutonomniRizeni
         static void Main(string[] args)
         {
             Random nc = new Random();
-            AutonomniAuto CyberTruck = new AutonomniAuto(50, 90, Pocasi.GetPocasi(nc.Next(0, 101)), DruhTrasy.GetTrasa(nc.Next(0, 101)));
+            Pocasi CyberPocasi = new Pocasi();
+            AutonomniAuto CyberTruck = new AutonomniAuto(50, 90, TrasaStav.Slunecno, TrasaDruh.Common);
             RidiciCentrum RC = new RidiciCentrum(CyberTruck);
-            RC.ZjistiTrasu();
+            RC.ZjistiPocasi(CyberPocasi);
+            CyberPocasi.GetPocasi();
         }
     }
 }

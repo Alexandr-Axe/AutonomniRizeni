@@ -27,9 +27,16 @@ namespace AutonomniRizeni
                 Sviti = false;
             }
         }
+        public void ZjistiPocasi(Pocasi P)
+        {
+            P.DruhPocasi += Delej;
+        }
+        public void Delej(TrasaStav Vygenerovano)
+        {
+            Console.WriteLine(Vygenerovano);
+        }
         public RidiciCentrum(AutonomniAuto elon) : base (elon.Rychlost, elon.DelkaTrasy, elon.trasaStav, elon.trasaDruh)
         {
-
         }
     }
 }
