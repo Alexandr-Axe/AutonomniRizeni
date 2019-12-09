@@ -13,7 +13,10 @@ namespace AutonomniRizeni
             AutonomniAuto CyberTruck = new AutonomniAuto(50, 90, TrasaStav.Slunecno, TrasaDruh.Common);
             RidiciCentrum RC = new RidiciCentrum(CyberTruck);
             RC.ZjistiPocasi(CyberPocasi);
+           // RC.ZjistiCestu(CyberPocasi);
             CyberPocasi.GetPocasi();
+            // CyberPocasi.GetTrasa();
+            Console.WriteLine(CyberTruck);
         }
     }
 }

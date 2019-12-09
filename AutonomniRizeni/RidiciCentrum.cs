@@ -30,8 +30,17 @@ namespace AutonomniRizeni
         public void ZjistiPocasi(Pocasi P)
         {
             P.DruhPocasi += Delej;
+            P.DruhCesty += DelejCestu;
         }
         public void Delej(TrasaStav Vygenerovano)
+        {
+            Console.WriteLine(Vygenerovano);
+        }
+        public void ZjistiCestu(Pocasi DRUHTRASY)
+        {
+            DRUHTRASY.DruhCesty += DelejCestu;
+        }
+        public void DelejCestu(TrasaDruh Vygenerovano)
         {
             Console.WriteLine(Vygenerovano);
         }
