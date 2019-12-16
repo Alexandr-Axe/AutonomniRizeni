@@ -1,0 +1,11 @@
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\bin\Debug\netcoreapp2.1\AutonomniRizeni.deps.json
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\bin\Debug\netcoreapp2.1\AutonomniRizeni.runtimeconfig.json
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\bin\Debug\netcoreapp2.1\AutonomniRizeni.runtimeconfig.dev.json
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\bin\Debug\netcoreapp2.1\AutonomniRizeni.dll
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\bin\Debug\netcoreapp2.1\AutonomniRizeni.pdb
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\obj\Debug\netcoreapp2.1\AutonomniRizeni.csproj.CoreCompileInputs.cache
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\obj\Debug\netcoreapp2.1\AutonomniRizeni.AssemblyInfoInputs.cache
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\obj\Debug\netcoreapp2.1\AutonomniRizeni.AssemblyInfo.cs
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\obj\Debug\netcoreapp2.1\AutonomniRizeni.dll
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\obj\Debug\netcoreapp2.1\AutonomniRizeni.pdb
+C:\Users\sekera.alexandr.2017\Source\Repos\AutonomniRizeni2\AutonomniRizeni\obj\Debug\netcoreapp2.1\AutonomniRizeni.csprojAssemblyReference.cache
